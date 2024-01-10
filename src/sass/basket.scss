@@ -1,0 +1,52 @@
+.basket {
+    display: grid;
+    gap: 30px;
+    width: 87%;
+    margin: 30px auto;
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    
+        tr{
+            th{
+                color: white;
+                background-color: #db4444;
+                padding: 10px;
+            }
+            td{
+                text-align: center;
+                .fa-trash{
+                    font-size: 23px;
+                    color: red;
+                    cursor: pointer;
+                }
+                i{
+                    cursor: pointer;
+                }
+                
+            }
+            .count{
+                .minus{
+                    background-color: red;
+                    padding: 7px;
+                    margin: 10px;
+                    border: none;
+                    color: white;
+                }
+                .plus{
+                    background-color: green;
+                    padding: 7px;
+                    margin: 10px;
+                    border: none;
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+
+  
+}

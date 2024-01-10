@@ -1,0 +1,98 @@
+.wishlist{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+   margin-top: 30px;
+    .card {
+        position: relative;
+        margin: 20px;
+
+        img {
+
+            background-color: #F5F5F5;
+        }
+
+        li {
+            color: red;
+        }
+
+        .price {
+            width: 80px;
+            display: flex;
+            justify-content: space-between;
+
+            .old {
+                text-decoration: line-through;
+                color: rgb(150, 150, 150);
+            }
+        }
+
+        i {
+            color: #FFAD33;
+        }
+
+        span {
+            color: rgb(150, 150, 150);
+        }
+
+        .persentage {
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            width: 42px;
+            height: 30px;
+            background-color: #DB4444;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            width: 270px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 63px;
+            left: 0px;
+            border: none;
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        &:hover {
+            button {
+                opacity: 1;
+            }
+        }
+
+        .fa-heart {
+            position: absolute;
+            top: 6px;
+            right: 40px;
+            background-color: white;
+            padding: 10px;
+            color: black;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .fa-eye {
+            position: absolute;
+            top: 50px;
+            right: 40px;
+            background-color: white;
+            padding: 10px;
+            color: black;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 50%;
+
+        }
+    }
+}
